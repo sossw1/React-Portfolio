@@ -3,6 +3,7 @@ import M from 'materialize-css';
 // Components
 import Navbar from './components/Navbar';
 import Sidenav from './components/Sidenav';
+import Header from './components/Header';
 
 class App extends Component {
   componentDidMount() {
@@ -14,6 +15,7 @@ class App extends Component {
       <>
         <Navbar />
         <Sidenav />
+        <Header />
       </>
     );
   }
