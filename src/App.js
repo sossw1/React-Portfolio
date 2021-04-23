@@ -8,6 +8,12 @@ import Header from './components/Header';
 import Section from './components/Section';
 import ProfilePicture from './components/ProfilePicture';
 import ProfileInfo from './components/ProfileInfo';
+import ProjectCard from './components/ProjectCard';
+// Images
+import takeoffScreenshot from './images/takeoff-screenshot.png';
+import purpleScreenshot from './images/purple-planet-screenshot.png';
+import playlistScreenshot from './images/my-cool-playlist-screenshot.png';
+import weatherScreenshot from './images/weather-dashboard-screenshot.png';
 
 class App extends Component {
   componentDidMount() {
@@ -34,7 +40,10 @@ class App extends Component {
           
         </Section> */}
         <Section id='projects' title='Projects' color='blue'>
-          
+          <ProjectCard
+            color='blue' title='Takeoff' screenshot={takeoffScreenshot}
+            repositoryLink='https://github.com/sossw1/Takeoff' appLink='https://takeoff123.herokuapp.com/'
+            description='A travel planning and blogging app that brings your past and future trips together in one place!' />
         </Section>
       </>
     );
