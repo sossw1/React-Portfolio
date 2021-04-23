@@ -1,4 +1,5 @@
 import React from 'react';
+import Row from './Row';
 
 function Section(props) {
   return (
@@ -6,9 +7,9 @@ function Section(props) {
       <h4 className={'center-align section-title ' + props.color + ' lighten-2'}>
         {props.title}
       </h4>
-      <div class="row no-top-margin no-bottom-margin">
+      <Row>
         {props.children}
-      </div>
+      </Row>
     </section>
   );
 }
