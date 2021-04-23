@@ -3,9 +3,9 @@ import profilePictureImage from '../images/profile-picture.jpg';
 
 function ProfilePicture() {
   return (
-    <div class="col s4 right-align">
+    <div className="col s4 right-align">
       <img
-        id="profile-picture" class="responsive-img circle"
+        id="profile-picture" className="responsive-img circle"
         src={profilePictureImage} alt="Profile" width="200px"
       />
     </div>
