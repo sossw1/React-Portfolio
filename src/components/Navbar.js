@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Navbar () {
+function Navbar() {
   return (
     <nav>
       <div className="nav-wrapper blue-grey darken-4">
