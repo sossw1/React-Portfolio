@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import M from 'materialize-css';
 import './App.css';
 // Components
@@ -6,6 +6,7 @@ import Navbar from './components/Navbar';
 import Sidenav from './components/Sidenav';
 import Header from './components/Header';
 import Section from './components/Section';
+import Row from './components/Row';
 
 class App extends Component {
   componentDidMount() {
@@ -13,13 +14,15 @@ class App extends Component {
   }
 
   render() {
-    return(
+    return (
       <>
         <Navbar />
         <Sidenav />
         <Header />
         <Section id='profile' title='Profile' color='cyan'>
-          
+          <Row>
+
+          </Row>
         </Section>
         {/* <Section id='experience' title='Experience' color='teal'>
           
@@ -31,7 +34,7 @@ class App extends Component {
           
         </Section> */}
         <Section id='projects' title='Projects' color='blue'>
-          
+
         </Section>
       </>
     );
