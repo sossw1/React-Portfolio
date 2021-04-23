@@ -1,5 +1,7 @@
 import React, {Component} from 'react';
 import M from 'materialize-css';
+// Components
+import Navbar from './components/Navbar';
 
 class App extends Component {
   componentDidMount() {
@@ -8,9 +10,9 @@ class App extends Component {
 
   render() {
     return(
-      <div className="App">
-
-      </div>
+      <>
+        <Navbar />
+      </>
     );
   }
 }
