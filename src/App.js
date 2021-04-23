@@ -34,7 +34,7 @@ class App extends Component {
           
         </Section> */}
         <Section id='projects' title='Projects' color='blue'>
-
+          
         </Section>
       </>
     );
