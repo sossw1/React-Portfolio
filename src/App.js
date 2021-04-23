@@ -8,6 +8,7 @@ import Header from './components/Header';
 import Section from './components/Section';
 import Row from './components/Row';
 import ProfilePicture from './components/ProfilePicture';
+import ProfileInfo from './components/ProfileInfo';
 
 class App extends Component {
   componentDidMount() {
@@ -23,7 +24,7 @@ class App extends Component {
         <Section id='profile' title='Profile' color='cyan'>
           <Row>
             <ProfilePicture />
-            
+            <ProfileInfo />
           </Row>
         </Section>
         {/* <Section id='experience' title='Experience' color='teal'>
