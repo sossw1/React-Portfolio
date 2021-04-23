@@ -1,0 +1,39 @@
+header, main, footer {
+  padding-left: 300px;
+}
+
+.row {
+  margin-top: 20px;
+}
+
+.section-title {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.no-bottom-margin {
+  margin-bottom: 0px;
+}
+
+.no-top-margin {
+  margin-top: 0px;
+}
+
+.card-img {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+#profile-picture {
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+
+@media only screen and (max-width : 992px) {
+  header, main, footer {
+    padding-left: 0;
+  }
+}
+
