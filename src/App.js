@@ -6,7 +6,6 @@ import Navbar from './components/Navbar';
 import Sidenav from './components/Sidenav';
 import Header from './components/Header';
 import Section from './components/Section';
-import Row from './components/Row';
 import ProfilePicture from './components/ProfilePicture';
 import ProfileInfo from './components/ProfileInfo';
 
@@ -22,10 +21,8 @@ class App extends Component {
         <Sidenav />
         <Header />
         <Section id='profile' title='Profile' color='cyan'>
-          <Row>
-            <ProfilePicture />
-            <ProfileInfo />
-          </Row>
+          <ProfilePicture />
+          <ProfileInfo />
         </Section>
         {/* <Section id='experience' title='Experience' color='teal'>
           
