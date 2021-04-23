@@ -21,7 +21,7 @@ class App extends Component {
         <Section id='profile' title='Profile' color='cyan'>
           
         </Section>
-        <Section id='experience' title='Experience' color='teal'>
+        {/* <Section id='experience' title='Experience' color='teal'>
           
         </Section>
         <Section id='technology' title='Technology' color='green'>
@@ -29,7 +29,7 @@ class App extends Component {
         </Section>
         <Section id='education' title='Education' color='amber'>
           
-        </Section>
+        </Section> */}
         <Section id='projects' title='Projects' color='blue'>
           
         </Section>
