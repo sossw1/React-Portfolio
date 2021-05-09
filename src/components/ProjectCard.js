@@ -3,12 +3,14 @@ import Row from './Row';
 
 function ProjectCard(props) {
   return (
-    <div className='col s12 m12 l6'>
+    <div className='col s12'>
       <div className={'card ' + props.color + ' lighten-2'}>
         <div className='card-content'>
           <span className='card-title center-align'>{props.title}</span>
-          <img className='responsive-img card-img' src={props.screenshot}
-            alt={props.title + ' Screenshot'} />
+          <div className='center-align'>
+            <img className='responsive-img card-img' src={props.screenshot}
+              alt={props.title + ' Screenshot'} />
+          </div>
           <p className='center-align'>{props.description}</p>
         </div>
         <div className='card-action'>
