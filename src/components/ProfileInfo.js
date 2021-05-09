@@ -5,7 +5,7 @@ function ProfileInfo() {
     <div className='col s8'>
       <div className='row'>
         <div className='col s4 right-align'>Name</div>
-        <div className='col s8'>William ('Bill') Soss</div>
+        <div className='col s8'>Bill Soss</div>
       </div>
       <div className='row'>
         <div className='col s4 right-align'>Location</div>
