@@ -1,5 +1,5 @@
 import React from 'react';
-import headerImage from '../images/tech-background.jpg';
+import headerImage from '../images/tech-background.png';
 
 function Header() {
   return (
