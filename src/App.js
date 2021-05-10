@@ -29,6 +29,7 @@ import mongodbLogo from './images/logos/MongoDB.png';
 import mysqlLogo from './images/logos/MySQL.png';
 import nodejsLogo from './images/logos/NodeJS.png';
 import reactLogo from './images/logos/React.png';
+import reduxLogo from './images/logos/Redux.png';
 import vscodeLogo from './images/logos/VSCode.png';
 
 const logos = [
@@ -39,6 +40,7 @@ const logos = [
   {name: 'GitHub', image: githubLogo},
   {name: 'Express', image: expressLogo},
   {name: 'React.js', image: reactLogo},
+  {name: 'Redux', image: reduxLogo},
   {name: 'MongoDB', image: mongodbLogo},
   {name: 'MySQL', image: mysqlLogo},
   {name: 'Handlebars', image: handlebarsLogo},
