@@ -9,11 +9,44 @@ import Section from './components/Section';
 import ProfilePicture from './components/ProfilePicture';
 import ProfileInfo from './components/ProfileInfo';
 import ProjectCard from './components/ProjectCard';
+import TechCard from './components/TechCard';
 // Images
-import takeoffScreenshot from './images/takeoff-screenshot.png';
-import purpleScreenshot from './images/purple-planet-screenshot.png';
-import playlistScreenshot from './images/my-cool-playlist-screenshot.png';
-import weatherScreenshot from './images/weather-dashboard-screenshot.png';
+import takeoffScreenshot from './images/screenshots/takeoff-screenshot.png';
+import purpleScreenshot from './images/screenshots/purple-planet-screenshot.png';
+import playlistScreenshot from './images/screenshots/my-cool-playlist-screenshot.png';
+import weatherScreenshot from './images/screenshots/weather-dashboard-screenshot.png';
+// Logos
+import bootstrapLogo from './images/logos/Bootstrap.png';
+import cssLogo from './images/logos/CSS.png';
+import expressLogo from './images/logos/Express.png';
+import githubLogo from './images/logos/GitHub.png';
+import handlebarsLogo from './images/logos/Handlebars.png';
+import herokuLogo from './images/logos/Heroku.png';
+import htmlLogo from './images/logos/HTML.png';
+import javascriptLogo from './images/logos/JavaScript.png';
+import materializeLogo from './images/logos/MaterializeCSS.png';
+import mongodbLogo from './images/logos/MongoDB.png';
+import mysqlLogo from './images/logos/MySQL.png';
+import nodejsLogo from './images/logos/NodeJS.png';
+import reactLogo from './images/logos/React.png';
+import vscodeLogo from './images/logos/VSCode.png';
+
+const logos = [
+  {name: 'JavaScript', image: javascriptLogo},
+  {name: 'HTML', image: htmlLogo},
+  {name: 'CSS', image: cssLogo},
+  {name: 'NodeJS', image: nodejsLogo},
+  {name: 'GitHub', image: githubLogo},
+  {name: 'Express', image: expressLogo},
+  {name: 'React.js', image: reactLogo},
+  {name: 'MongoDB', image: mongodbLogo},
+  {name: 'MySQL', image: mysqlLogo},
+  {name: 'Handlebars', image: handlebarsLogo},
+  {name: 'Materialize', image: materializeLogo},
+  {name: 'Bootstrap', image: bootstrapLogo},
+  {name: 'Heroku', image: herokuLogo},
+  {name: 'Visual Studio Code', image: vscodeLogo}
+];
 
 class App extends Component {
   componentDidMount() {
@@ -65,6 +98,12 @@ class App extends Component {
               appLink='https://sossw1.github.io/Weather-Dashboard/'
               description='A quick, easy weather app that displays current \
               weather and a 5-day forecast!' />
+          </Section>
+
+          <Section id='technology' title='Technology' color='green'>
+            {logos.map(logo => {
+              return(<TechCard color='green' name={logo.name} logo={logo.image} />)
+            })}
           </Section>
         </main>
       </>
