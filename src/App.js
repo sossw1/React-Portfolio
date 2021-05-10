@@ -20,16 +20,17 @@ import bootstrapLogo from './images/logos/Bootstrap.png';
 import cssLogo from './images/logos/CSS.png';
 import expressLogo from './images/logos/Express.png';
 import githubLogo from './images/logos/GitHub.png';
-import handlebarsLogo from './images/logos/Handlebars.png';
 import herokuLogo from './images/logos/Heroku.png';
 import htmlLogo from './images/logos/HTML.png';
 import javascriptLogo from './images/logos/JavaScript.png';
+import jestLogo from './images/logos/Jest.png'
 import materializeLogo from './images/logos/MaterializeCSS.png';
 import mongodbLogo from './images/logos/MongoDB.png';
 import mysqlLogo from './images/logos/MySQL.png';
 import nodejsLogo from './images/logos/NodeJS.png';
 import reactLogo from './images/logos/React.png';
 import reduxLogo from './images/logos/Redux.png';
+import travisLogo from './images/logos/Travis.png';
 import vscodeLogo from './images/logos/VSCode.png';
 
 const logos = [
@@ -43,11 +44,12 @@ const logos = [
   {name: 'Redux', image: reduxLogo},
   {name: 'MongoDB', image: mongodbLogo},
   {name: 'MySQL', image: mysqlLogo},
-  {name: 'Handlebars', image: handlebarsLogo},
   {name: 'Materialize', image: materializeLogo},
   {name: 'Bootstrap', image: bootstrapLogo},
   {name: 'Heroku', image: herokuLogo},
-  {name: 'Visual Studio Code', image: vscodeLogo}
+  {name: 'Travis CI', image: travisLogo},
+  {name: 'Jest', image: jestLogo},
+  {name: 'VSCode', image: vscodeLogo}
 ];
 
 class App extends Component {
