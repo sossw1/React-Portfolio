@@ -13,13 +13,13 @@ function Sidenav() {
         <a href='#experience' className='white-text sidenav-close'><i className='material-icons white-text'>location_city</i>Experience</a>
       </li>
       <li>
-        <a href='#technology' className='white-text sidenav-close'><i className='material-icons white-text'>personal_video</i>Technology</a>
-      </li>
-      <li>
         <a href='#education' className='white-text sidenav-close'><i className='material-icons white-text'>school</i>Education</a>
       </li> */}
       <li>
         <a href='#projects' className='white-text sidenav-close'><i className='material-icons white-text'>wb_incandescent</i>Projects</a>
+      </li>
+      <li>
+        <a href='#technology' className='white-text sidenav-close'><i className='material-icons white-text'>personal_video</i>Technology</a>
       </li>
     </ul>
   );
