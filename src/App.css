@@ -6,6 +6,10 @@ header, main, footer {
   margin-top: 20px;
 }
 
+.parallax-container {
+  height: 250px !important;
+}
+
 .section-title {
   margin-top: 0px;
   margin-bottom: 0px;
