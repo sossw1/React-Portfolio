@@ -103,8 +103,8 @@ class App extends Component {
           </Section>
 
           <Section id='technology' title='Technology' color='green'>
-            {logos.map(logo => {
-              return(<TechCard color='green' name={logo.name} logo={logo.image} />)
+            {logos.map((logo, index) => {
+              return(<TechCard key={index} color='green' name={logo.name} logo={logo.image} />)
             })}
           </Section>
         </main>
