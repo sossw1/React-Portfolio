@@ -31,6 +31,15 @@ function ProfileInfo() {
           </a>
         </div>
       </div>
+      <div className='row'>
+        <div className='col s4 right-align'>Bio</div>
+        <div className='col s8'>I enjoy tackling challenging problems and exploring
+        innovative solutions. I love developing dynamic, responsive and user-friendly 
+        web applications that provide value to users. I am always learning new 
+        tricks which definitely keeps things interesting. I like working on projects 
+        with my peers because there's always something to gain from others' experiences. 
+        Let's code together!</div>
+      </div>
     </div>
   );
 }
