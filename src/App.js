@@ -107,48 +107,50 @@ class App extends Component {
           </Section>
 
           <Section id='education' title='Education' color='amber'>
-            <div className='card amber lighten-2'>
-              <Row>
-                <div className='card-content'>
-                  <div className='col s3'>
-                    <div className='right-align'>
-                      <img className='responsive-img school-img' src={uconn}
-                        alt='UConn logo' width='100px' />
+            <div className='container'>
+              <div className='card amber lighten-2'>
+                <Row>
+                  <div className='card-content'>
+                    <div className='col s3'>
+                      <div className='right-align'>
+                        <img className='responsive-img school-img' src={uconn}
+                          alt='UConn logo' width='100px' />
+                      </div>
+                    </div>
+                    <div className='col s9'>
+                      <span>
+                        Certificate in Web Development - University of Connecticut<br />
+                        <sup>Apr 2021</sup><br />
+                        <em>Immersive MERN stack program focused on developing
+                        responsive, dynamic, user-friendly web applications.</em>
+                      </span>
                     </div>
                   </div>
-                  <div className='col s9'>
-                    <span>
-                      Certificate in Web Development - University of Connecticut<br />
-                      <sup>Apr 2021</sup><br />
-                      <em>Immersive MERN stack program focused on developing
-                      responsive, dynamic, user-friendly web applications.</em>
-                    </span>
-                  </div>
-                </div>
-              </Row>
-            </div>
+                </Row>
+              </div>
 
-            <div className='card amber lighten-2'>
-              <Row>
-                <div className='card-content'>
-                  <div className='col s3'>
-                    <div className='right-align'>
-                      <img className='responsive-img school-img' src={southern}
-                        alt='SCSU logo' width='100px' />
+              <div className='card amber lighten-2'>
+                <Row>
+                  <div className='card-content'>
+                    <div className='col s3'>
+                      <div className='right-align'>
+                        <img className='responsive-img' src={southern}
+                          alt='SCSU logo' width='100px' />
+                      </div>
+                    </div>
+                    <div className='col s9'>
+                      <span>
+                        Bachelor of Arts in Mathematics - Southern Connecticut
+                        State University<br />
+                        <sup>May 2015</sup><br />
+                        <em>Graduated from the Honors College Program with
+                        departmental honors from the Mathematics Department for an 
+                        undergraduate thesis in the field of Graph Theory.</em>
+                      </span>
                     </div>
                   </div>
-                  <div className='col s9'>
-                    <span>
-                      Bachelor of Arts in Mathematics - Southern Connecticut
-                      State University<br />
-                      <sup>May 2015</sup><br />
-                      <em>Graduated from the Honors College Program with
-                      departmental honors from the Mathematics Department for an 
-                      undergraduate thesis in the field of Graph Theory.</em>
-                    </span>
-                  </div>
-                </div>
-              </Row>
+                </Row>
+              </div>
             </div>
           </Section>
         </main>
