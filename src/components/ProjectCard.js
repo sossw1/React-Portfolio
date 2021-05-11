@@ -11,7 +11,8 @@ function ProjectCard(props) {
             <img className='responsive-img card-img' src={props.screenshot}
               alt={props.title + ' Screenshot'} />
           </div>
-          <p className='center-align'>{props.description}</p>
+          <p className='center-align'>{props.description}</p><br/>
+          <p className='center-align'>Contributions: {props.contribution}</p>
         </div>
         <div className='card-action'>
           <Row>
