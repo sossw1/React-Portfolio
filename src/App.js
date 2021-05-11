@@ -79,25 +79,36 @@ class App extends Component {
               repositoryLink='https://github.com/sossw1/Takeoff'
               appLink='https://takeoff123.herokuapp.com/'
               description='A travel planning and blogging app that brings your 
-              past and future trips together in one place!' />
+              past and future trips together in one place!'
+              contribution='Created database with Mongoose models, 
+              structured API routes, implemented authentication for registration 
+              and login, set up API requests, and managed global state.' />
             <ProjectCard
               color='blue' title='Purple Planet' screenshot={purpleScreenshot}
               repositoryLink='https://github.com/sossw1/project-purple-planet'
               appLink='https://purple-planet.herokuapp.com/'
-              description='A simple, clean, lightweight and free personal \
-              project and task manager!' />
+              description='A simple, clean, lightweight and free personal 
+              project and task manager!'
+              contribution='Set up MySQL database, created ORM using Sequelize, 
+              made Express API and HTML routes, connected data to front end 
+              using Handlebars.' />
             <ProjectCard
               color='blue' title='My Cool Playlist' screenshot={playlistScreenshot}
               repositoryLink='https://github.com/sossw1/playlist-creator'
               appLink='https://sossw1.github.io/Playlist-Creator/'
-              description='A free, private music app for creating playlists and \
-              viewing song data!' />
+              description='A free, private music app for creating playlists and 
+              viewing song data!'
+              contribution='Third-party API integration using AJAX requests, 
+              DOM manipulation using JQuery, local storage management, 
+              created dynamic search functionality.' />
             <ProjectCard
               color='blue' title='Weather Dashboard' screenshot={weatherScreenshot}
               repositoryLink='https://github.com/sossw1/Weather-Dashboard'
               appLink='https://sossw1.github.io/Weather-Dashboard/'
-              description='A quick, easy weather app that displays current \
-              weather and a 5-day forecast!' />
+              description='A quick, easy weather app that displays current 
+              weather and a 5-day forecast!'
+              contribution='Independently developed using HTML, CSS, JavaScript, 
+              JQuery and OpenWeather API' />
           </Section>
 
           <Section id='technology' title='Technology' color='green'>
