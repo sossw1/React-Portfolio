@@ -30,6 +30,13 @@ header, main, footer {
   padding-right: 10%;
 }
 
+.school-img {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
 #profile-picture {
   margin-top: 10%;
   margin-bottom: 10%;

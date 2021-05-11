@@ -9,6 +9,7 @@ import Section from './components/Section';
 import ProfilePicture from './components/ProfilePicture';
 import ProfileInfo from './components/ProfileInfo';
 import ProjectCard from './components/ProjectCard';
+import Row from './components/Row';
 import TechCard from './components/TechCard';
 // Images
 import takeoffScreenshot from './images/screenshots/takeoff-screenshot.png';
@@ -32,24 +33,27 @@ import reactLogo from './images/logos/React.png';
 import reduxLogo from './images/logos/Redux.png';
 import travisLogo from './images/logos/Travis.png';
 import vscodeLogo from './images/logos/VSCode.png';
+// Education
+import uconn from './images/UConn.png';
+import southern from './images/Southern.png';
 
 const logos = [
-  {name: 'JavaScript', image: javascriptLogo},
-  {name: 'HTML', image: htmlLogo},
-  {name: 'CSS', image: cssLogo},
-  {name: 'NodeJS', image: nodejsLogo},
-  {name: 'GitHub', image: githubLogo},
-  {name: 'Express', image: expressLogo},
-  {name: 'React.js', image: reactLogo},
-  {name: 'Redux', image: reduxLogo},
-  {name: 'MongoDB', image: mongodbLogo},
-  {name: 'MySQL', image: mysqlLogo},
-  {name: 'Materialize', image: materializeLogo},
-  {name: 'Bootstrap', image: bootstrapLogo},
-  {name: 'Heroku', image: herokuLogo},
-  {name: 'Travis CI', image: travisLogo},
-  {name: 'Jest', image: jestLogo},
-  {name: 'VSCode', image: vscodeLogo}
+  { name: 'JavaScript', image: javascriptLogo },
+  { name: 'HTML', image: htmlLogo },
+  { name: 'CSS', image: cssLogo },
+  { name: 'NodeJS', image: nodejsLogo },
+  { name: 'GitHub', image: githubLogo },
+  { name: 'Express', image: expressLogo },
+  { name: 'React.js', image: reactLogo },
+  { name: 'Redux', image: reduxLogo },
+  { name: 'MongoDB', image: mongodbLogo },
+  { name: 'MySQL', image: mysqlLogo },
+  { name: 'Materialize', image: materializeLogo },
+  { name: 'Bootstrap', image: bootstrapLogo },
+  { name: 'Heroku', image: herokuLogo },
+  { name: 'Travis CI', image: travisLogo },
+  { name: 'Jest', image: jestLogo },
+  { name: 'VSCode', image: vscodeLogo }
 ];
 
 class App extends Component {
@@ -68,15 +72,7 @@ class App extends Component {
             <ProfilePicture />
             <ProfileInfo />
           </Section>
-          {/* <Section id='experience' title='Experience' color='teal'>
-            
-          </Section>
-          <Section id='technology' title='Technology' color='green'>
-            
-          </Section>
-          <Section id='education' title='Education' color='amber'>
-            
-          </Section> */}
+
           <Section id='projects' title='Projects' color='blue'>
             <ProjectCard
               color='blue' title='Takeoff' screenshot={takeoffScreenshot}
@@ -88,7 +84,7 @@ class App extends Component {
               color='blue' title='Purple Planet' screenshot={purpleScreenshot}
               repositoryLink='https://github.com/sossw1/project-purple-planet'
               appLink='https://purple-planet.herokuapp.com/'
-              description= 'A simple, clean, lightweight and free personal \
+              description='A simple, clean, lightweight and free personal \
               project and task manager!' />
             <ProjectCard
               color='blue' title='My Cool Playlist' screenshot={playlistScreenshot}
@@ -106,8 +102,61 @@ class App extends Component {
 
           <Section id='technology' title='Technology' color='green'>
             {logos.map((logo, index) => {
-              return(<TechCard key={index} color='green' name={logo.name} logo={logo.image} />)
+              return (<TechCard key={index} color='green' name={logo.name} logo={logo.image} />)
             })}
+          </Section>
+
+          <Section id='education' title='Education' color='amber'>
+            <Row>
+              <div className='col s12'>
+                <div className='card amber lighten-2'>
+                  <Row>
+                    <div className='col s2'>
+                      <div className='right-align'>
+                        <img className='responsive-img school-img' src={uconn}
+                          alt='UConn logo' width='200px' />
+                      </div>
+                    </div>
+                    <div className='col s8'>
+                      <div className='card-content'>
+                        <span>
+                          Certificate in Web Development - University of Connecticut<br />
+                          <sup>Apr 2021</sup><br />
+                          <em>Immersive MERN stack program focused on developing
+                          responsive, dynamic, user-friendly web applications.</em>
+                        </span>
+                      </div>
+                    </div>
+                    <div className='col s2'></div>
+                  </Row>
+                </div>
+
+                <div className='card amber lighten-2'>
+                  <Row>
+                    <div className='col s2'>
+                      <div className='right-align'>
+                        <img className='responsive-img school-img' src={southern}
+                          alt='SCSU logo' width='200px' />
+                      </div>
+                    </div>
+                    <div className='col s8'>
+                      <div className='card-content'>
+                        <span>
+                          Bachelor of Arts in Mathematics - Southern Connecticut 
+                          State University<br />
+                          <sup>May 2015</sup><br />
+                          <em>Graduated from the Honors College Program with
+                            departmental honors from the Mathematics Department
+                            for an undergraduate thesis in the field of Graph
+                            Theory.</em>
+                        </span>
+                      </div>
+                    </div>
+                    <div className='col s2'></div>
+                  </Row>
+                </div>
+              </div>
+            </Row>
           </Section>
         </main>
       </>
