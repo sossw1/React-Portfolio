@@ -3,11 +3,13 @@ import './App.css';
 import { ThemeProvider } from '@mui/material';
 import theme from './theme';
 
+import TopBar from './components/TopBar';
+
 class App extends Component {
   render() {
     return (
       <ThemeProvider theme={theme}>
-        
+        <TopBar />
       </ThemeProvider>
     );
   }
