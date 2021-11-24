@@ -8,7 +8,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import { styled } from '@mui/material';
 const Offset = styled('div')(({ theme }) => theme.mixins.toolbar);
 
-export default function TopBar() {
+export default function TopBar(props) {
   return (
     <>
       <Box sx={{ flexGrow: 1 }}>
@@ -20,6 +20,7 @@ export default function TopBar() {
               color="inherit"
               aria-label="menu"
               sx={{ mr: 2 }}
+              onClick={props.toggleDrawer}
             >
               <MenuIcon />
             </IconButton>
