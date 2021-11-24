@@ -24,7 +24,7 @@ class App extends Component {
 
     return (
       <ThemeProvider theme={theme}>
-        <TopBar />
+        <TopBar toggleDrawer={this.toggleDrawer} />
       </ThemeProvider>
     );
   }
