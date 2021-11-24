@@ -11,9 +11,17 @@ class App extends Component {
     this.state = {
       isDrawerOpen: false
     }
+    this.toggleDrawer = this.toggleDrawer.bind(this);
+  }
+
+  toggleDrawer() {
+    this.setState({
+      isDrawerOpen: !this.state.isDrawerOpen
+    })
   }
 
   render() {
+
     return (
       <ThemeProvider theme={theme}>
         <TopBar />
