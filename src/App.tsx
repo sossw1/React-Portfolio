@@ -1,5 +1,8 @@
+import { ThemeProvider } from '@mui/material/styles';
+import theme from './Theme';
+
 function App() {
-  return <div className='App'></div>;
+  return <ThemeProvider theme={theme}></ThemeProvider>;
 }
 
 export default App;
