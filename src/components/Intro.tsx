@@ -1,4 +1,5 @@
-import { Container, Typography } from '@mui/material';
+import { Button, Container, Typography } from '@mui/material';
+import { VolumeUp } from '@mui/icons-material';
 
 export default function Intro() {
   return (
@@ -13,6 +14,30 @@ export default function Intro() {
         >
           noun (1)
         </Typography>
+      </Typography>
+      <Typography variant='h5' fontFamily='serif' mb='0.75rem'>
+        bill·soss
+        <Typography
+          variant='h5'
+          p='0 1.5rem'
+          fontFamily='serif'
+          fontWeight='bold'
+          display='inline'
+        >
+          |
+        </Typography>
+        \ 'bil sȯs{' '}
+        <Button
+          sx={{
+            display: 'inline',
+            lineHeight: '1rem',
+            p: '0 5px',
+            minWidth: '24px'
+          }}
+        >
+          <VolumeUp />
+        </Button>{' '}
+        \
       </Typography>
     </Container>
   );
