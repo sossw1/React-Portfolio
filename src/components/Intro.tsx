@@ -39,6 +39,21 @@ export default function Intro() {
         </Button>{' '}
         \
       </Typography>
+      <Typography variant='h4' fontFamily='serif' mb='0.5rem'>
+        Definition of <i>bill soss</i> (Entry 1 of 1)
+      </Typography>
+      <Typography variant='h5' fontFamily='serif' sx={{ fontWeight: '500' }}>
+        <Typography
+          variant='h5'
+          display='inline'
+          fontFamily='serif'
+          fontWeight='bold'
+          pr='1rem'
+        >
+          1
+        </Typography>
+        : a full-stack web developer
+      </Typography>
     </Container>
   );
 }
