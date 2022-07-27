@@ -72,9 +72,9 @@ export default function Intro() {
           pr='1rem'
           sx={{ ...theme.dictionary }}
         >
-          1
+          1 :
         </Typography>
-        : a full-stack web developer
+        a full-stack web developer
       </Typography>
     </Container>
   );
