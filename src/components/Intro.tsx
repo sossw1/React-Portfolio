@@ -71,28 +71,35 @@ export default function Intro() {
       <Typography
         variant='h4'
         component='h2'
-        mb='0.5rem'
+        mb='1rem'
         sx={{ ...theme.dictionary }}
       >
         Definition of <i>bill soss</i> (Entry 1 of 1)
       </Typography>
-      <Typography
-        variant='h5'
-        component='p'
-        sx={{ fontWeight: '500', ...theme.dictionary }}
-      >
+      {[
+        'full-stack web developer',
+        '9-ball billiards team captain',
+        'pc and board game enthusiast'
+      ].map((item, index) => (
         <Typography
           variant='h5'
-          component='span'
-          display='inline'
-          fontWeight='bold'
-          pr='1rem'
-          sx={{ ...theme.dictionary }}
+          component='p'
+          mb='0.5rem'
+          sx={{ fontWeight: '500', ...theme.dictionary }}
         >
-          1 :
+          <Typography
+            variant='h5'
+            component='span'
+            display='inline'
+            fontWeight='bold'
+            pr='1rem'
+            sx={{ ...theme.dictionary }}
+          >
+            {index + 1} :
+          </Typography>
+          {item}
         </Typography>
-        a full-stack web developer
-      </Typography>
+      ))}
     </Container>
   );
 }
