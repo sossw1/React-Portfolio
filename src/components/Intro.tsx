@@ -1,7 +1,23 @@
+import { useState, useEffect } from 'react';
 import { Button, Container, Typography } from '@mui/material';
 import { VolumeUp } from '@mui/icons-material';
 
 export default function Intro() {
+  const [audio] = useState(new Audio('/audio/billsoss.mp3'));
+  const [playing, setPlaying] = useState(false);
+  const togglePlaying = () => setPlaying(!playing);
+
+  useEffect(() => {
+    playing ? audio.play() : audio.pause();
+  }, [playing, audio]);
+
+  useEffect(() => {
+    audio.addEventListener('ended', () => setPlaying(false));
+    return () => {
+      audio.removeEventListener('ended', () => setPlaying(false));
+    };
+  }, [audio]);
+
   return (
     <Container sx={{ mt: '1rem' }}>
       <Typography variant='h1' fontWeight='600' fontFamily='serif'>
@@ -34,6 +50,7 @@ export default function Intro() {
             p: '0 5px',
             minWidth: '24px'
           }}
+          onClick={togglePlaying}
         >
           <VolumeUp />
         </Button>{' '}
