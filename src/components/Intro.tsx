@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Box, Button, Typography } from '@mui/material';
+import { Box, Button, Paper, Typography } from '@mui/material';
 import { VolumeUp } from '@mui/icons-material';
 import theme from '../Theme';
 
@@ -21,7 +21,10 @@ export default function Intro() {
 
   return (
     <Box display='flex' flexDirection='row' justifyContent='center'>
-      <Box component='section' mt='10rem'>
+      <Paper
+        component='section'
+        sx={{ m: '10rem 0', p: '5rem', borderRadius: '10px' }}
+      >
         <Typography
           variant='h1'
           fontFamily='Playfair Display,serif'
@@ -101,7 +104,7 @@ export default function Intro() {
             {item}
           </Typography>
         ))}
-      </Box>
+      </Paper>
     </Box>
   );
 }
