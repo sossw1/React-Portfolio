@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Button, Container, Typography } from '@mui/material';
 import { VolumeUp } from '@mui/icons-material';
+import theme from '../Theme';
 
 export default function Intro() {
   const [audio] = useState(new Audio('/audio/billsoss.mp3'));
@@ -20,25 +21,29 @@ export default function Intro() {
 
   return (
     <Container sx={{ mt: '1rem' }}>
-      <Typography variant='h1' fontWeight='600' fontFamily='serif'>
-        Bill Soss{' '}
+      <Typography
+        variant='h1'
+        fontFamily='Playfair Display,serif'
+        fontWeight='bold'
+      >
+        bill soss{' '}
         <Typography
           variant='h3'
           display='inline'
           color='primary'
-          fontFamily='serif'
+          fontFamily='Playfair Display,serif'
         >
           noun (1)
         </Typography>
       </Typography>
-      <Typography variant='h5' fontFamily='serif' mb='0.75rem'>
+      <Typography variant='h5' mb='0.75rem' sx={{ ...theme.dictionary }}>
         bill·soss
         <Typography
           variant='h5'
           p='0 1.5rem'
-          fontFamily='serif'
           fontWeight='bold'
           display='inline'
+          sx={{ ...theme.dictionary }}
         >
           |
         </Typography>
@@ -56,16 +61,16 @@ export default function Intro() {
         </Button>{' '}
         \
       </Typography>
-      <Typography variant='h4' fontFamily='serif' mb='0.5rem'>
+      <Typography variant='h4' mb='0.5rem' sx={{ ...theme.dictionary }}>
         Definition of <i>bill soss</i> (Entry 1 of 1)
       </Typography>
-      <Typography variant='h5' fontFamily='serif' sx={{ fontWeight: '500' }}>
+      <Typography variant='h5' sx={{ fontWeight: '500', ...theme.dictionary }}>
         <Typography
           variant='h5'
           display='inline'
-          fontFamily='serif'
           fontWeight='bold'
           pr='1rem'
+          sx={{ ...theme.dictionary }}
         >
           1
         </Typography>
