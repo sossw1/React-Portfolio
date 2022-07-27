@@ -20,7 +20,7 @@ export default function Intro() {
   }, [audio]);
 
   return (
-    <Container sx={{ mt: '1rem' }}>
+    <Container component='section' sx={{ mt: '1rem' }}>
       <Typography
         variant='h1'
         fontFamily='Playfair Display,serif'
@@ -29,6 +29,7 @@ export default function Intro() {
         bill soss{' '}
         <Typography
           variant='h3'
+          component='span'
           display='inline'
           color='primary'
           fontFamily='Playfair Display,serif'
@@ -36,10 +37,16 @@ export default function Intro() {
           noun (1)
         </Typography>
       </Typography>
-      <Typography variant='h5' mb='0.75rem' sx={{ ...theme.dictionary }}>
+      <Typography
+        variant='h5'
+        component='p'
+        mb='0.75rem'
+        sx={{ ...theme.dictionary }}
+      >
         bill·soss
         <Typography
           variant='h5'
+          component='span'
           p='0 1.5rem'
           fontWeight='bold'
           display='inline'
@@ -61,12 +68,22 @@ export default function Intro() {
         </Button>{' '}
         \
       </Typography>
-      <Typography variant='h4' mb='0.5rem' sx={{ ...theme.dictionary }}>
+      <Typography
+        variant='h4'
+        component='h2'
+        mb='0.5rem'
+        sx={{ ...theme.dictionary }}
+      >
         Definition of <i>bill soss</i> (Entry 1 of 1)
       </Typography>
-      <Typography variant='h5' sx={{ fontWeight: '500', ...theme.dictionary }}>
+      <Typography
+        variant='h5'
+        component='p'
+        sx={{ fontWeight: '500', ...theme.dictionary }}
+      >
         <Typography
           variant='h5'
+          component='span'
           display='inline'
           fontWeight='bold'
           pr='1rem'
