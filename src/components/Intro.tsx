@@ -21,10 +21,23 @@ export default function Intro() {
 
   return (
     <Box sx={{ backgroundColor: theme.palette.grey[300] }}>
-      <Box display='flex' flexDirection='row' justifyContent='center'>
+      <Box display='flex' flexDirection='column' alignItems='center'>
+        <Box mt='5rem'>
+          <Typography
+            variant='h3'
+            textAlign='center'
+            component='p'
+            mb='1rem'
+            sx={{
+              ...theme.narration
+            }}
+          >
+            👋 Hi, I'm Bill Soss
+          </Typography>
+        </Box>
         <Paper
           component='section'
-          sx={{ m: '10rem 0', p: '5rem', borderRadius: '10px' }}
+          sx={{ m: '5rem 0', p: '5rem', borderRadius: '10px' }}
         >
           <Typography
             variant='h1'
