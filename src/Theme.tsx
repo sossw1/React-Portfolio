@@ -5,10 +5,16 @@ declare module '@mui/material/styles' {
     dictionary: {
       fontFamily: string;
     };
+    narration: {
+      fontFamily: string;
+    };
   }
 
   interface ThemeOptions {
     dictionary: {
+      fontFamily: string;
+    };
+    narration: {
       fontFamily: string;
     };
   }
@@ -25,6 +31,9 @@ const theme = createTheme({
   },
   dictionary: {
     fontFamily: 'Open Sans,Helvetica,Arial,sans-serif'
+  },
+  narration: {
+    fontFamily: 'Playfair Display,serif'
   }
 });
 
