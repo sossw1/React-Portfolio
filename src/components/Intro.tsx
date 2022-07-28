@@ -1,7 +1,26 @@
 import { useState, useEffect } from 'react';
 import { Box, Button, Paper, Typography } from '@mui/material';
 import { VolumeUp } from '@mui/icons-material';
+import { keyframes } from '@mui/system';
 import theme from '../Theme';
+
+const lineUp = keyframes`
+  0% {
+    opacity: 0;
+    transform: translateY(80%);
+  }
+  20% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+`;
 
 export default function Intro() {
   const [audio] = useState(new Audio('/audio/billsoss.mp3'));
@@ -29,7 +48,13 @@ export default function Intro() {
             component='p'
             mb='1rem'
             sx={{
-              ...theme.narration
+              ...theme.narration,
+              width: '100%',
+              height: '4rem',
+              overflow: 'hidden',
+              padding: 0,
+              mb: '16px',
+              animation: `2s ${lineUp} ease-out`
             }}
           >
             👋 Hi, I'm Bill Soss
