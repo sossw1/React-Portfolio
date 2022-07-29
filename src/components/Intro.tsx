@@ -23,6 +23,18 @@ const lineUp = keyframes`
   }
 `;
 
+const upAndRotation = keyframes`
+  0% {
+    tranform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(30deg);
+  }
+  100% {
+    tranform: rotate(-60deg);
+  }
+`;
+
 export default function Intro() {
   const [audio] = useState(new Audio('/audio/billsoss.mp3'));
   const [playing, setPlaying] = useState(false);
@@ -42,24 +54,39 @@ export default function Intro() {
   return (
     <Box sx={{ backgroundColor: theme.palette.grey[300] }}>
       <Box display='flex' flexDirection='column' alignItems='center'>
-        <Box mt='5rem'>
-          <Typography
-            variant='h3'
-            textAlign='center'
-            component='p'
-            mb='1rem'
-            sx={{
-              ...theme.narration,
-              width: '100%',
-              height: '4rem',
-              overflow: 'hidden',
-              padding: 0,
-              mb: '16px',
-              animation: `2s ${lineUp} ease-out`
-            }}
-          >
-            👋 Hi, I'm Bill Soss
-          </Typography>
+        <Box
+          mt='5rem'
+          pb='1rem'
+          display='flex'
+          flexDirection='row'
+          sx={{ overflow: 'hidden', animation: `2s ${lineUp} ease-out` }}
+        >
+          <Box>
+            <Typography
+              variant='h3'
+              pb='1.5rem'
+              pr='1.5rem'
+              sx={{
+                animation: `${upAndRotation} 0.5s linear 2`,
+                animationDelay: '1s'
+              }}
+            >
+              👋
+            </Typography>
+          </Box>
+          <Box>
+            <Typography
+              variant='h3'
+              display='inline'
+              component='p'
+              mb='1rem'
+              sx={{
+                ...theme.narration
+              }}
+            >
+              Hi, I'm Bill Soss
+            </Typography>
+          </Box>
         </Box>
         <Paper
           component='section'
