@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { Box, Button, Paper, Typography } from '@mui/material';
 import { VolumeUp } from '@mui/icons-material';
 import { keyframes } from '@mui/system';
+import { v4 as uuid } from 'uuid';
 import theme from '../Theme';
 
 const lineUp = keyframes`
@@ -125,6 +126,7 @@ export default function Intro() {
             'pc and board game enthusiast'
           ].map((item, index) => (
             <Typography
+              key={uuid()}
               variant='h5'
               component='p'
               mb='0.5rem'
