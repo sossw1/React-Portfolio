@@ -34,37 +34,56 @@ const upAndRotation = keyframes`
 
 export default function Greeter() {
   return (
-    <Box
-      mt='5rem'
-      pb='1rem'
-      display='flex'
-      flexDirection='row'
-      sx={{ overflow: 'hidden', animation: `2s ${lineUp} ease-out` }}
-    >
-      <Box>
+    <Box m='5rem 0'>
+      <Box
+        display='flex'
+        flexDirection='row'
+        justifyContent='center'
+        overflow='hidden'
+        sx={{ animation: `1.5s ${lineUp} ease-out` }}
+      >
         <Typography
           variant='h3'
+          component='span'
           pb='1.5rem'
           pr='1.5rem'
           sx={{
-            animation: `${upAndRotation} 0.5s linear 2`,
-            animationDelay: '1s'
+            animation: `${upAndRotation} 0.35s linear 2`,
+            animationDelay: '.75s'
           }}
         >
           👋
         </Typography>
-      </Box>
-      <Box>
         <Typography
           variant='h3'
+          component='h1'
           display='inline'
-          component='p'
-          mb='1rem'
           sx={{
             ...theme.narration
           }}
         >
           Hi, I'm Bill Soss
+        </Typography>
+      </Box>
+      <Box
+        display='flex'
+        flexDirection='row'
+        overflow='hidden'
+        sx={{
+          opacity: 0,
+          animation: `1.5s ${lineUp} ease-out 1`,
+          animationDelay: '1.5s',
+          animationFillMode: 'forwards'
+        }}
+      >
+        <Typography
+          variant='h4'
+          component='p'
+          sx={{
+            ...theme.narration
+          }}
+        >
+          Here's a little info about me:
         </Typography>
       </Box>
     </Box>
