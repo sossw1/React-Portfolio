@@ -1,8 +1,27 @@
 import { useState, useEffect } from 'react';
 import { Button, Paper, Typography } from '@mui/material';
+import { keyframes } from '@mui/system';
 import { VolumeUp } from '@mui/icons-material';
 import { v4 as uuid } from 'uuid';
 import theme from '../Theme';
+
+const lineUp = keyframes`
+  0% {
+    opacity: 0;
+    transform: translateY(80%);
+  }
+  20% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+`;
 
 export default function Definition() {
   const [audio] = useState(new Audio('/audio/billsoss.mp3'));
@@ -23,7 +42,15 @@ export default function Definition() {
   return (
     <Paper
       component='section'
-      sx={{ mb: '5rem', p: '5rem', borderRadius: '10px' }}
+      sx={{
+        mb: '5rem',
+        p: '5rem',
+        borderRadius: '10px',
+        opacity: 0,
+        animation: `${lineUp} 2s ease-out 1`,
+        animationDelay: '2.5s',
+        animationFillMode: 'forwards'
+      }}
     >
       <Typography
         variant='h1'
