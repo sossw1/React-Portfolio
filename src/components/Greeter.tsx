@@ -20,7 +20,7 @@ const lineUp = keyframes`
   }
 `;
 
-const upAndRotation = keyframes`
+const rotation = keyframes`
   0% {
     tranform: rotate(0deg);
   }
@@ -48,7 +48,7 @@ export default function Greeter() {
           pb='1.5rem'
           pr='1.5rem'
           sx={{
-            animation: `${upAndRotation} 0.35s linear 2`,
+            animation: `${rotation} 0.35s linear 2`,
             animationDelay: '.75s'
           }}
         >
