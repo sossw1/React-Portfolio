@@ -23,7 +23,7 @@ export default function Definition() {
   return (
     <Paper
       component='section'
-      sx={{ m: '5rem 0', p: '5rem', borderRadius: '10px' }}
+      sx={{ mb: '5rem', p: '5rem', borderRadius: '10px' }}
     >
       <Typography
         variant='h1'
@@ -90,7 +90,8 @@ export default function Definition() {
           variant='h5'
           component='p'
           mb='0.5rem'
-          sx={{ fontWeight: '500', ...theme.dictionary }}
+          fontWeight='500'
+          sx={{ ...theme.dictionary }}
         >
           <Typography
             variant='h5'
