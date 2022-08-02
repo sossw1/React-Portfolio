@@ -8,7 +8,10 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <Box
-        sx={{ backgroundColor: theme.palette.grey[300], minHeight: '100vh' }}
+        sx={{
+          backgroundColor: theme.palette.grey[300],
+          minHeight: 'calc(100vh + 1px)'
+        }}
       >
         <Box display='flex' flexDirection='column' alignItems='center'>
           <Greeter />
