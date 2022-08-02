@@ -46,6 +46,7 @@ export default function Definition() {
     };
   }, [audio]);
 
+  const smDown = useMediaQuery(theme.breakpoints.down('sm'));
   const mdDown = useMediaQuery(theme.breakpoints.down('md'));
   const lgDown = useMediaQuery(theme.breakpoints.down('lg'));
 
@@ -82,19 +83,22 @@ export default function Definition() {
           <Typography
             variant={mdDown ? 'h2' : 'h1'}
             component='h2'
+            mr={smDown ? 0 : '1rem'}
+            display={smDown ? undefined : 'inline'}
             fontFamily='Playfair Display,serif'
             fontWeight='bold'
+            lineHeight={smDown ? '0.9' : undefined}
           >
-            bill soss{' '}
-            <Typography
-              variant={mdDown ? 'h3' : 'h2'}
-              component='span'
-              display='inline'
-              color='primary'
-              fontFamily='Playfair Display,serif'
-            >
-              noun (1)
-            </Typography>
+            bill soss
+          </Typography>
+          <Typography
+            variant={mdDown ? (smDown ? 'h4' : 'h3') : 'h2'}
+            component='span'
+            display={smDown ? undefined : 'inline'}
+            color='primary'
+            fontFamily='Playfair Display,serif'
+          >
+            noun (1)
           </Typography>
           <Typography
             variant='h5'
