@@ -46,6 +46,7 @@ export default function Definition() {
     };
   }, [audio]);
 
+  const mdDown = useMediaQuery(theme.breakpoints.down('md'));
   const lgDown = useMediaQuery(theme.breakpoints.down('lg'));
 
   return (
@@ -79,13 +80,14 @@ export default function Definition() {
         </Box>
         <Box>
           <Typography
-            variant='h1'
+            variant={mdDown ? 'h2' : 'h1'}
+            component='h2'
             fontFamily='Playfair Display,serif'
             fontWeight='bold'
           >
             bill soss{' '}
             <Typography
-              variant='h3'
+              variant={mdDown ? 'h3' : 'h2'}
               component='span'
               display='inline'
               color='primary'
@@ -126,12 +128,15 @@ export default function Definition() {
             \
           </Typography>
           <Typography
-            variant='h4'
+            variant={mdDown ? 'h5' : 'h4'}
             component='h2'
             mb='1rem'
             sx={{ ...theme.dictionary }}
           >
-            Definition of <i>bill soss</i> (Entry 1 of 1)
+            Definition of <i>bill soss</i>{' '}
+            <Typography variant={mdDown ? 'h5' : 'h4'} component='span'>
+              (Entry 1 of 1)
+            </Typography>
           </Typography>
           {[
             'full-stack web developer',
