@@ -40,7 +40,12 @@ export default function Greeter() {
         flexDirection='row'
         justifyContent='center'
         overflow='hidden'
-        sx={{ animation: `1.5s ${lineUp} ease-out` }}
+        sx={{
+          opacity: 0,
+          animation: `1s ${lineUp} ease-out`,
+          animationDelay: '0.25s',
+          animationFillMode: 'forwards'
+        }}
       >
         <Typography
           variant='h3'
@@ -48,8 +53,8 @@ export default function Greeter() {
           pb='1.5rem'
           pr='1.5rem'
           sx={{
-            animation: `${rotation} 0.35s linear 2`,
-            animationDelay: '.75s'
+            animation: `${rotation} 0.4s linear 2`,
+            animationDelay: '1s'
           }}
         >
           👋
@@ -71,7 +76,7 @@ export default function Greeter() {
         overflow='hidden'
         sx={{
           opacity: 0,
-          animation: `1.5s ${lineUp} ease-out 1`,
+          animation: `1s ${lineUp} ease-out`,
           animationDelay: '1.5s',
           animationFillMode: 'forwards'
         }}

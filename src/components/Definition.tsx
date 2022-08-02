@@ -47,8 +47,8 @@ export default function Definition() {
         p: '5rem',
         borderRadius: '10px',
         opacity: 0,
-        animation: `${lineUp} 2s ease-out 1`,
-        animationDelay: '2.5s',
+        animation: `${lineUp} 1s ease-out`,
+        animationDelay: '2s',
         animationFillMode: 'forwards'
       }}
     >
