@@ -1,5 +1,12 @@
 import { useState, useEffect } from 'react';
-import { Avatar, Box, Button, Paper, Typography } from '@mui/material';
+import {
+  Avatar,
+  Box,
+  Button,
+  Paper,
+  Typography,
+  useMediaQuery
+} from '@mui/material';
 import { keyframes } from '@mui/system';
 import { VolumeUp } from '@mui/icons-material';
 import { v4 as uuid } from 'uuid';
@@ -39,6 +46,8 @@ export default function Definition() {
     };
   }, [audio]);
 
+  const lgDown = useMediaQuery(theme.breakpoints.down('lg'));
+
   return (
     <Paper
       component='section'
@@ -52,12 +61,20 @@ export default function Definition() {
         animationFillMode: 'forwards'
       }}
     >
-      <Box display='flex' flexDirection='row' alignItems='center'>
-        <Box mr='5rem'>
+      <Box
+        display='flex'
+        flexDirection={lgDown ? 'column' : 'row'}
+        alignItems='center'
+      >
+        <Box mr={lgDown ? undefined : '5rem'} mb={lgDown ? '3rem' : undefined}>
           <Avatar
             variant='square'
             src='/images/avatar.jpg'
-            sx={{ width: '15rem', height: '20rem', borderRadius: '10px' }}
+            sx={{
+              width: '24rem',
+              height: '32rem',
+              borderRadius: '10px'
+            }}
           ></Avatar>
         </Box>
         <Box>
