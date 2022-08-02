@@ -53,10 +53,12 @@ export default function Definition() {
   return (
     <Paper
       component='section'
+      elevation={smDown ? 0 : undefined}
       sx={{
+        width: smDown ? '100%' : undefined,
         mb: '5rem',
         p: '5rem',
-        borderRadius: '10px',
+        borderRadius: smDown ? 0 : '10px',
         opacity: 0,
         animation: `${lineUp} 1s ease-out`,
         animationDelay: '2s',
