@@ -86,7 +86,7 @@ export default function Definition() {
             <Typography
               variant={mdDown ? 'h2' : 'h1'}
               component='h2'
-              mr={smDown ? 0 : '1rem'}
+              mr={smDown ? 0 : '1.5rem'}
               display={smDown ? undefined : 'inline'}
               fontFamily='Playfair Display,serif'
               fontWeight='bold'
