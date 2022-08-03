@@ -74,6 +74,7 @@ export default function Definition() {
           <Avatar
             variant='square'
             src='/images/avatar.jpg'
+            alt='avatar'
             sx={{
               width: smDown ? '300px' : '375px',
               height: smDown ? '400px' : '500px',
