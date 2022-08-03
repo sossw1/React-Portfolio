@@ -102,7 +102,7 @@ export default function Definition() {
           >
             noun (1)
           </Typography>
-          <Typography>
+          <Box>
             <Typography
               variant='h5'
               component='span'
@@ -143,8 +143,8 @@ export default function Definition() {
               </Button>{' '}
               \
             </Typography>
-          </Typography>
-          <Typography>
+          </Box>
+          <Box>
             <Typography
               variant={mdDown ? 'h5' : 'h4'}
               component='h3'
@@ -163,7 +163,7 @@ export default function Definition() {
             >
               (Entry 1 of 1)
             </Typography>
-          </Typography>
+          </Box>
           {[
             'full-stack web developer',
             '9-ball billiards team captain',
