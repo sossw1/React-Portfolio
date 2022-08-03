@@ -1,4 +1,4 @@
-import { Box, Typography } from '@mui/material';
+import { Box, Typography, useMediaQuery } from '@mui/material';
 import { keyframes } from '@mui/system';
 import theme from '../Theme';
 
@@ -34,12 +34,15 @@ const rotation = keyframes`
 
 export default function Greeter() {
   return (
-    <Box m='5rem 0'>
+    <Box m='5rem 0' textAlign='center'>
       <Box
         display='flex'
-        flexDirection='row'
+        flexDirection={
+          useMediaQuery(theme.breakpoints.down(450)) ? 'column' : 'row'
+        }
         justifyContent='center'
         overflow='hidden'
+        mb={useMediaQuery(theme.breakpoints.down(450)) ? '1rem' : 0}
         sx={{
           animation: `2s ${lineUp} ease-out`
         }}
