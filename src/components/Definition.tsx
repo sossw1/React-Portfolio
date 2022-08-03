@@ -82,27 +82,33 @@ export default function Definition() {
           ></Avatar>
         </Box>
         <Box>
-          <Typography
-            variant={mdDown ? 'h2' : 'h1'}
-            component='h2'
-            mr={smDown ? 0 : '1rem'}
-            display={smDown ? undefined : 'inline'}
-            fontFamily='Playfair Display,serif'
-            fontWeight='bold'
-            lineHeight={smDown ? '0.9' : undefined}
-          >
-            bill soss
-          </Typography>
-          <Typography
-            variant={mdDown ? (smDown ? 'h4' : 'h3') : 'h2'}
-            component='span'
-            display={smDown ? undefined : 'inline'}
-            color='primary'
-            fontFamily='Playfair Display,serif'
-          >
-            noun (1)
-          </Typography>
-          <Box>
+          <Box mb='1rem'>
+            <Typography
+              variant={mdDown ? 'h2' : 'h1'}
+              component='h2'
+              mr={smDown ? 0 : '1rem'}
+              display={smDown ? undefined : 'inline'}
+              fontFamily='Playfair Display,serif'
+              fontWeight='bold'
+            >
+              bill soss
+            </Typography>
+            <Box
+              mb={smDown ? '1rem' : 0}
+              display={smDown ? undefined : 'inline'}
+            >
+              <Typography
+                variant={mdDown ? (smDown ? 'h4' : 'h3') : 'h2'}
+                component='span'
+                display={smDown ? undefined : 'inline'}
+                color='primary'
+                fontFamily='Playfair Display,serif'
+              >
+                noun (1)
+              </Typography>
+            </Box>
+          </Box>
+          <Box mb='1rem'>
             <Typography
               variant='h5'
               component='span'
@@ -144,7 +150,7 @@ export default function Definition() {
               \
             </Typography>
           </Box>
-          <Box>
+          <Box mb='1rem'>
             <Typography
               variant={mdDown ? 'h5' : 'h4'}
               component='h3'
@@ -164,32 +170,34 @@ export default function Definition() {
               (Entry 1 of 1)
             </Typography>
           </Box>
-          {[
-            'full-stack web developer',
-            '9-ball billiards team captain',
-            'pc and board game enthusiast'
-          ].map((item, index) => (
-            <Typography
-              key={uuid()}
-              variant='h5'
-              component='p'
-              mb='0.5rem'
-              fontWeight='500'
-              sx={{ ...theme.dictionary }}
-            >
+          <Box>
+            {[
+              'full-stack web developer',
+              '9-ball billiards team captain',
+              'pc and board game enthusiast'
+            ].map((item, index) => (
               <Typography
+                key={uuid()}
                 variant='h5'
-                component='span'
-                display='inline'
-                fontWeight='bold'
-                pr='1rem'
+                component='p'
+                mb='1rem'
+                fontWeight='500'
                 sx={{ ...theme.dictionary }}
               >
-                {index + 1} :
+                <Typography
+                  variant='h5'
+                  component='span'
+                  display='inline'
+                  fontWeight='bold'
+                  pr='1rem'
+                  sx={{ ...theme.dictionary }}
+                >
+                  {index + 1} :
+                </Typography>
+                {item}
               </Typography>
-              {item}
-            </Typography>
-          ))}
+            ))}
+          </Box>
         </Box>
       </Box>
     </Paper>
