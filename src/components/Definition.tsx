@@ -57,7 +57,7 @@ export default function Definition() {
       sx={{
         width: smDown ? '100%' : undefined,
         mb: '5rem',
-        p: '5rem',
+        p: smDown ? '5rem 3rem' : '5rem',
         borderRadius: smDown ? 0 : '10px',
         opacity: 0,
         animation: `${lineUp} 1s ease-out`,
@@ -102,45 +102,65 @@ export default function Definition() {
           >
             noun (1)
           </Typography>
-          <Typography
-            variant='h5'
-            component='p'
-            mb='0.75rem'
-            sx={{ ...theme.dictionary }}
-          >
-            bill·soss
+          <Typography>
             <Typography
               variant='h5'
               component='span'
-              p='0 1.5rem'
-              fontWeight='bold'
+              mb='0.75rem'
+              sx={{ ...theme.dictionary }}
+              hidden={useMediaQuery(theme.breakpoints.down(500))}
+            >
+              bill·soss
+              <Typography
+                variant='h5'
+                component='span'
+                p='0 1.5rem'
+                fontWeight='bold'
+                display='inline'
+                sx={{ ...theme.dictionary }}
+              >
+                |
+              </Typography>
+            </Typography>
+            <Typography
+              variant='h5'
+              component='p'
+              mb='0.75rem'
               display='inline'
               sx={{ ...theme.dictionary }}
             >
-              |
+              \ 'bil sȯs{' '}
+              <Button
+                sx={{
+                  display: 'inline',
+                  lineHeight: '1rem',
+                  p: '0 5px',
+                  minWidth: '24px'
+                }}
+                onClick={togglePlaying}
+              >
+                <VolumeUp />
+              </Button>{' '}
+              \
             </Typography>
-            \ 'bil sȯs{' '}
-            <Button
-              sx={{
-                display: 'inline',
-                lineHeight: '1rem',
-                p: '0 5px',
-                minWidth: '24px'
-              }}
-              onClick={togglePlaying}
-            >
-              <VolumeUp />
-            </Button>{' '}
-            \
           </Typography>
-          <Typography
-            variant={mdDown ? 'h5' : 'h4'}
-            component='h2'
-            mb='1rem'
-            sx={{ ...theme.dictionary }}
-          >
-            Definition of <i>bill soss</i>{' '}
-            <Typography variant={mdDown ? 'h5' : 'h4'} component='span'>
+          <Typography>
+            <Typography
+              variant={mdDown ? 'h5' : 'h4'}
+              component='h3'
+              mb='1rem'
+              display='inline'
+              sx={{ ...theme.dictionary }}
+            >
+              Definition of <i>bill soss</i>{' '}
+            </Typography>
+            <Typography
+              variant={mdDown ? 'h5' : 'h4'}
+              component='span'
+              display={
+                useMediaQuery(theme.breakpoints.down(550)) ? 'block' : 'inline'
+              }
+            >
               (Entry 1 of 1)
             </Typography>
           </Typography>
