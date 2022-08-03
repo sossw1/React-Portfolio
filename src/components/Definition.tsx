@@ -60,8 +60,8 @@ export default function Definition() {
         p: smDown ? '5rem 3rem' : '5rem',
         borderRadius: smDown ? 0 : '10px',
         opacity: 0,
-        animation: `${lineUp} 1s ease-out`,
-        animationDelay: '2s',
+        animation: `${lineUp} 2s ease-out`,
+        animationDelay: '0.4s',
         animationFillMode: 'forwards'
       }}
     >

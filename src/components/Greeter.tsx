@@ -41,10 +41,7 @@ export default function Greeter() {
         justifyContent='center'
         overflow='hidden'
         sx={{
-          opacity: 0,
-          animation: `1s ${lineUp} ease-out`,
-          animationDelay: '0.25s',
-          animationFillMode: 'forwards'
+          animation: `2s ${lineUp} ease-out`
         }}
       >
         <Typography
@@ -53,7 +50,7 @@ export default function Greeter() {
           pb='1.5rem'
           pr='1.5rem'
           sx={{
-            animation: `${rotation} 0.4s linear 2`,
+            animation: `${rotation} 0.4s linear 3`,
             animationDelay: '1s'
           }}
         >
@@ -76,8 +73,8 @@ export default function Greeter() {
         overflow='hidden'
         sx={{
           opacity: 0,
-          animation: `1s ${lineUp} ease-out`,
-          animationDelay: '1.5s',
+          animation: `2s ${lineUp} ease-out`,
+          animationDelay: '0.2s',
           animationFillMode: 'forwards'
         }}
       >
