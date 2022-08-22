@@ -1,7 +1,7 @@
 import { ThemeProvider } from '@mui/material/styles';
 import { Box } from '@mui/material';
 import theme from './Theme';
-import Greeter from './components/Greeter';
+import About from './components/About';
 
 function App() {
   return (
@@ -13,7 +13,7 @@ function App() {
         }}
       >
         <Box display='flex' flexDirection='column' alignItems='center'>
-          <Greeter />
+          <About />
         </Box>
       </Box>
     </ThemeProvider>

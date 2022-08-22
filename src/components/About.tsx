@@ -32,7 +32,7 @@ const rotation = keyframes`
   }
 `;
 
-export default function Greeter() {
+export default function About() {
   return (
     <Box m='5rem 0' textAlign='center'>
       <Box
