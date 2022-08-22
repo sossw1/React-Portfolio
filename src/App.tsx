@@ -2,8 +2,6 @@ import { ThemeProvider } from '@mui/material/styles';
 import { Box } from '@mui/material';
 import theme from './Theme';
 import Greeter from './components/Greeter';
-import Definition from './components/Definition';
-import Skills from './components/Skills';
 
 function App() {
   return (
@@ -16,8 +14,6 @@ function App() {
       >
         <Box display='flex' flexDirection='column' alignItems='center'>
           <Greeter />
-          <Definition />
-          <Skills />
         </Box>
       </Box>
     </ThemeProvider>

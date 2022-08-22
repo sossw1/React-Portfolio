@@ -70,27 +70,6 @@ export default function Greeter() {
           Hi, I'm Bill Soss
         </Typography>
       </Box>
-      <Box
-        display='flex'
-        flexDirection='row'
-        overflow='hidden'
-        sx={{
-          opacity: 0,
-          animation: `2s ${lineUp} ease-out`,
-          animationDelay: '0.2s',
-          animationFillMode: 'forwards'
-        }}
-      >
-        <Typography
-          variant='h4'
-          component='p'
-          sx={{
-            ...theme.narration
-          }}
-        >
-          Here's a little info about me:
-        </Typography>
-      </Box>
     </Box>
   );
 }
