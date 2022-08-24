@@ -2,19 +2,19 @@ import { createTheme } from '@mui/material/styles';
 
 declare module '@mui/material/styles' {
   interface Theme {
-    dictionary: {
+    sans: {
       fontFamily: string;
     };
-    narration: {
+    serif: {
       fontFamily: string;
     };
   }
 
   interface ThemeOptions {
-    dictionary: {
+    sans: {
       fontFamily: string;
     };
-    narration: {
+    serif: {
       fontFamily: string;
     };
   }
@@ -29,10 +29,10 @@ const theme = createTheme({
       main: '#ffc107'
     }
   },
-  dictionary: {
+  sans: {
     fontFamily: 'Open Sans,Helvetica,Arial,sans-serif'
   },
-  narration: {
+  serif: {
     fontFamily: 'Playfair Display,serif'
   }
 });
