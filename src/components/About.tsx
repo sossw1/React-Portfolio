@@ -1,4 +1,4 @@
-import { Box, Typography, useMediaQuery } from '@mui/material';
+import { Box, Container, Typography, useMediaQuery } from '@mui/material';
 import { keyframes } from '@mui/system';
 import theme from '../Theme';
 
@@ -33,15 +33,16 @@ const rotation = keyframes`
 `;
 
 export default function About() {
-  const smDown = useMediaQuery(theme.breakpoints.down('sm'));
-
   return (
-    <Box m='5rem 0'>
+    <Container sx={{ m: '5rem 0' }}>
       <Box
         display='flex'
-        flexDirection={smDown ? 'column' : 'row'}
+        flexDirection={
+          useMediaQuery(theme.breakpoints.down(750)) ? 'column' : 'row'
+        }
         justifyContent='center'
         alignItems='center'
+        textAlign='center'
         overflow='hidden'
         mb='2rem'
         sx={{
@@ -72,6 +73,28 @@ export default function About() {
           Hi, I'm Bill Soss
         </Typography>
       </Box>
-    </Box>
+      <Box>
+        <Typography
+          variant='h4'
+          component='h2'
+          mb='1rem'
+          sx={{ ...theme.serif }}
+        >
+          <b style={{ fontSize: '40px', marginRight: '0.5rem' }}>01.</b> About
+          Me
+        </Typography>
+        <Typography
+          variant='body1'
+          component='p'
+          sx={{ ...theme.sans, fontSize: '1.25rem' }}
+        >
+          Incididunt est est fugiat labore amet ut quis incididunt culpa
+          consectetur excepteur incididunt amet velit. Irure aliquip magna
+          deserunt ex aliqua tempor ullamco ut tempor nisi. Voluptate officia
+          sint exercitation dolor esse deserunt deserunt nulla proident ut
+          deserunt Lorem.
+        </Typography>
+      </Box>
+    </Container>
   );
 }
