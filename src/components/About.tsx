@@ -33,22 +33,23 @@ const rotation = keyframes`
 `;
 
 export default function About() {
+  const smDown = useMediaQuery(theme.breakpoints.down('sm'));
+
   return (
-    <Box m='5rem 0' textAlign='center'>
+    <Box m='5rem 0'>
       <Box
         display='flex'
-        flexDirection={
-          useMediaQuery(theme.breakpoints.down(450)) ? 'column' : 'row'
-        }
+        flexDirection={smDown ? 'column' : 'row'}
         justifyContent='center'
+        alignItems='center'
         overflow='hidden'
-        mb={useMediaQuery(theme.breakpoints.down(450)) ? '1rem' : 0}
+        mb='2rem'
         sx={{
           animation: `2s ${lineUp} ease-out`
         }}
       >
         <Typography
-          variant='h3'
+          variant='h2'
           component='span'
           pb='1.5rem'
           pr='1.5rem'
@@ -60,11 +61,12 @@ export default function About() {
           👋
         </Typography>
         <Typography
-          variant='h3'
-          component='h1'
+          variant='h1'
           display='inline'
+          pb='1.5rem'
           sx={{
-            ...theme.narration
+            ...theme.sans,
+            fontSize: '80px'
           }}
         >
           Hi, I'm Bill Soss
