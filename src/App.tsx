@@ -2,6 +2,7 @@ import { ThemeProvider } from '@mui/material/styles';
 import { Box } from '@mui/material';
 import theme from './Theme';
 import About from './components/About';
+import Projects from './components/Projects';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       >
         <Box display='flex' flexDirection='column' alignItems='center'>
           <About />
+          <Projects />
         </Box>
       </Box>
     </ThemeProvider>
