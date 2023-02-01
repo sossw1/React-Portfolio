@@ -74,40 +74,32 @@ export default function About() {
           Hi, I'm Bill Soss
         </Typography>
       </Box>
-      <Box>
-        <Typography
-          variant='h4'
-          component='h2'
-          mb='1rem'
-          sx={{ ...theme.serif }}
-        >
-          <b style={{ fontSize: '40px', marginRight: '0.5rem' }}>01.</b> About
-          Me
-        </Typography>
-        <Typography
-          variant='body1'
-          component='p'
-          mb='1rem'
-          sx={{ ...theme.sans, fontSize: '1.25rem' }}
-        >
-          I am a full-stack web developer. I love to implement designs and bring
-          features to life! I work with JavaScript/TypeScript, React, HTML and
-          CSS to deliver quality front-end products. I also have experience
-          developing APIs, SQL/NoSQL databases, and servers with popular tools
-          like NodeJS, Express, MongoDB, PostgreSQL, and socket.io
-        </Typography>
-        <Typography
-          variant='body1'
-          component='p'
-          sx={{ ...theme.sans, fontSize: '1.25rem' }}
-        >
-          In my personal life, I am engaged to be married to my wonderful
-          fiance, Emily, this year on November 5th! I have been the captain of
-          an amateur 9-ball billiards team for about five years (division champs
-          three times). I enjoy video games, D&D, board games, boating/jet
-          skiing, running/lifting, and time spent with family.
-        </Typography>
-      </Box>
+      <Typography variant='h4' component='h2' mb='1rem' sx={{ ...theme.serif }}>
+        <b style={{ fontSize: '40px', marginRight: '0.5rem' }}>01.</b> About Me
+      </Typography>
+      <Typography
+        variant='body1'
+        component='p'
+        mb='1rem'
+        sx={{ ...theme.sans, fontSize: '1.25rem' }}
+      >
+        I am a full-stack web developer. I love to implement designs and bring
+        features to life! I work with JavaScript/TypeScript, React, HTML and CSS
+        to deliver quality front-end products. I also have experience developing
+        APIs, SQL/NoSQL databases, and servers with popular tools like NodeJS,
+        Express, MongoDB, PostgreSQL, and socket.io
+      </Typography>
+      <Typography
+        variant='body1'
+        component='p'
+        sx={{ ...theme.sans, fontSize: '1.25rem' }}
+      >
+        In my personal life, I am engaged to be married to my wonderful fiance,
+        Emily, this year on November 5th! I have been the captain of an amateur
+        9-ball billiards team for about five years (division champs three
+        times). I enjoy video games, D&D, board games, boating/jet skiing,
+        running/lifting, and time spent with family.
+      </Typography>
     </Container>
   );
 }
