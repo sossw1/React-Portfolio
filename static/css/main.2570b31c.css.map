@@ -1,0 +1,1 @@
+{"version":3,"file":"static/css/main.2570b31c.css","mappings":"AAAA,iBAGE,qBACF,CAEA,EACE,QACF","sources":["index.css"],"sourcesContent":["*,\r\n*::before,\r\n*::after {\r\n  box-sizing: border-box;\r\n}\r\n\r\n* {\r\n  margin: 0;\r\n}\r\n"],"names":[],"sourceRoot":""}
