@@ -27,7 +27,13 @@ export default function Projects() {
               borderRadius: '10px'
             }}
           >
-            <CardHeader title='Chatter' />
+            <CardHeader
+              title={
+                <Typography variant='h5' sx={{ ...theme.serif }}>
+                  Chatter
+                </Typography>
+              }
+            />
             <CardMedia
               component='img'
               image='/images/chatter-screenshot.png'
@@ -45,7 +51,13 @@ export default function Projects() {
         </Grid>
         <Grid item textAlign='center' xs={12} sm={10} md={8} lg={6}>
           <Card sx={{ borderRadius: '10px' }}>
-            <CardHeader title='Takeoff' />
+            <CardHeader
+              title={
+                <Typography variant='h5' sx={{ ...theme.serif }}>
+                  Takeoff
+                </Typography>
+              }
+            />
             <CardMedia
               component='img'
               image='/images/takeoff-screenshot.png'
@@ -62,7 +74,13 @@ export default function Projects() {
         </Grid>
         <Grid item textAlign='center' xs={12} sm={10} md={8} lg={6}>
           <Card sx={{ borderRadius: '10px' }}>
-            <CardHeader title='Project Purple Planet' />
+            <CardHeader
+              title={
+                <Typography variant='h5' sx={{ ...theme.serif }}>
+                  Project Purple Planet
+                </Typography>
+              }
+            />
             <CardMedia
               component='img'
               image='/images/purple-planet-screenshot.png'
