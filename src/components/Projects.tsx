@@ -38,7 +38,7 @@ export default function Projects() {
               <Typography variant='body2'>
                 A real-time chat application that allows you to add friends,
                 <br hidden={size450Down} />
-                join chat rooms and send messages to people!
+                join chat rooms and send messages to people
               </Typography>
             </CardContent>
           </Card>
@@ -55,7 +55,23 @@ export default function Projects() {
             <CardContent>
               <Typography variant='body2'>
                 Social media hub for travelers to share their trips
-                <br hidden={smDown} /> and plan itineraries for future getaways!
+                <br hidden={smDown} /> and plan itineraries for future getaways
+              </Typography>
+            </CardContent>
+          </Card>
+        </Grid>
+        <Grid item textAlign='center' xs={12} sm={10} md={8} lg={6}>
+          <Card sx={{ borderRadius: '10px' }}>
+            <CardHeader title='Project Purple Planet' />
+            <CardMedia
+              component='img'
+              image='/images/purple-planet-screenshot.png'
+              height={lgUp ? '450px' : undefined}
+              alt='Project Purple Planet app screenshot'
+            />
+            <CardContent>
+              <Typography variant='body2'>
+                Project manager application similar to Kanban
               </Typography>
             </CardContent>
           </Card>
