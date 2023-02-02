@@ -27,6 +27,10 @@ export default function Contact() {
           <Grid container direction='row' spacing={5} alignItems='center'>
             <Grid item>
               <Button
+                component='a'
+                href='mailto:sossw1@gmail.com'
+                rel='noopener noreferrer'
+                target='_blank'
                 variant='outlined'
                 sx={{
                   fontSize: '1rem',
