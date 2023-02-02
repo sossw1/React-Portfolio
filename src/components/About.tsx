@@ -94,7 +94,7 @@ export default function About() {
         component='p'
         sx={{ ...theme.sans, fontSize: '1.25rem' }}
       >
-        In my personal life, I am engaged to be married to my wonderful fiance,
+        In my personal life, I am engaged to be married to my wonderful fiancée,
         Emily, this year on November 5th! I have been the captain of an amateur
         9-ball billiards team for about five years (division champs three
         times). I enjoy video games, D&D, board games, boating/jet skiing,
