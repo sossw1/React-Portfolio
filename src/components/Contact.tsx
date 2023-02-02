@@ -19,7 +19,7 @@ export default function Contact() {
           </Typography>
         </Grid>
         <Grid item>
-          <Typography variant='body1' fontSize='1.25rem'>
+          <Typography variant='body1' fontSize='1.25rem' sx={{ ...theme.sans }}>
             If you would like to get in touch, email is the best bet! 😊
           </Typography>
         </Grid>
@@ -33,6 +33,7 @@ export default function Contact() {
                 target='_blank'
                 variant='outlined'
                 sx={{
+                  ...theme.sans,
                   fontSize: '1rem',
                   lineHeight: 1.5
                 }}
