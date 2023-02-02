@@ -37,7 +37,7 @@ export default function About() {
   const down750 = useMediaQuery(theme.breakpoints.down(750));
 
   return (
-    <Container sx={{ m: '5rem 0' }}>
+    <Container sx={{ m: '3rem 0' }}>
       <Box
         display='flex'
         flexDirection={down750 ? 'column' : 'row'}
