@@ -41,7 +41,7 @@ export default function Projects() {
               alt='Chatter app screenshot'
             />
             <CardContent>
-              <Typography variant='body2'>
+              <Typography variant='body2' sx={{ ...theme.sans }}>
                 A real-time chat application that allows you to add friends,
                 <br hidden={size450Down} />
                 join chat rooms and send messages to people
@@ -65,7 +65,7 @@ export default function Projects() {
               alt='Takeoff app screenshot'
             />
             <CardContent>
-              <Typography variant='body2'>
+              <Typography variant='body2' sx={{ ...theme.sans }}>
                 Social media hub for travelers to share their trips
                 <br hidden={smDown} /> and plan itineraries for future getaways
               </Typography>
@@ -88,7 +88,7 @@ export default function Projects() {
               alt='Project Purple Planet app screenshot'
             />
             <CardContent>
-              <Typography variant='body2'>
+              <Typography variant='body2' sx={{ ...theme.sans }}>
                 Project manager application similar to Kanban
               </Typography>
             </CardContent>
