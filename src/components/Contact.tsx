@@ -37,6 +37,24 @@ export default function Contact() {
                 Email
               </Button>
             </Grid>
+            <Grid item>
+              <Button
+                component='a'
+                target='_blank'
+                href='https://github.com/sossw1'
+              >
+                <GitHub sx={{ fontSize: '40px' }} />
+              </Button>
+            </Grid>
+            <Grid item>
+              <Button
+                component='a'
+                target='_blank'
+                href='https://linkedin.com/in/william-soss'
+              >
+                <LinkedIn sx={{ fontSize: '40px' }} />
+              </Button>
+            </Grid>
           </Grid>
         </Grid>
       </Grid>
